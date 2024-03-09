@@ -16,12 +16,20 @@ Clone this repository to your local machine to get started.
 git clone <repository-url>
 cd <repository-directory>
 ```
+
+## Build and run the container
+### Build the container
+
+```shell
+make build
+```
 This command builds the Docker image with Nginx configured to serve the static content.
+
 
 ### Start the service
 
 ```shell
-make build
+make up
 ```
 This command starts the Docker container in the background. Nginx serves on port 8888, and logs are stored in a Docker volume.
 
@@ -37,14 +45,6 @@ To stop and remove the Docker container, use:
 
 ```shell
 make down
-```
-
-
-### Build and Run the Container
-Build the Docker image:
-
-```shell
-make build
 ```
 
 ## Assumptions made
