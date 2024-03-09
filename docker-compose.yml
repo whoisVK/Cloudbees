@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  myapi:
+    build: .
+    ports:
+      - "8888:80"
+    volumes:
+      - nginx-logs:/var/log/nginx
+    environment:
+      - DOMAIN=myapi.cloudbees
+volumes:
+  nginx-logs:
