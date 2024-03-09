@@ -2,10 +2,10 @@
 
 To run this project, you will need:
 
-Docker
-Docker Compose
-Make
-curl or wget (for testing)
+-Docker
+-Docker Compose
+-Make
+-curl or wget (for testing)
 
 ## Getting Started
 
